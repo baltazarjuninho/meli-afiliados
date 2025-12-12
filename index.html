@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AchadosJr</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>AchadosJr</h1>
+      <p class="tag">Achados e ofertas do Mercado Livre</p>
+      <div class="controls">
+        <input id="search" placeholder="Buscar..." />
+        <select id="sort">
+          <option value="new">Mais recentes</option>
+          <option value="cheap">Menor preço</option>
+          <option value="expensive">Maior preço</option>
+        </select>
+        <button id="toggleTheme" title="Alternar tema">Tema</button>
+      </div>
+      <a class="admin-link" href="admin.html">Painel Admin</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="list-section">
+      <p id="empty" class="muted">Nenhum produto cadastrado.</p>
+      <ul id="products" class="product-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; AchadosJr</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — AchadosJr</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><div class="container"><h1>Admin — AchadosJr</h1></div></header>
+
+  <main class="container admin">
+    <div class="card">
+      <label>Senha:</label>
+      <input id="pass" type="password" placeholder="Digite a senha">
+      <button id="btnLogin" class="btn">Entrar</button>
+    </div>
+
+    <div id="panel" style="display:none">
+      <div class="card">
+        <label for="linkInput">Cole o link (afiliado ou normal):</label>
+        <input id="linkInput" placeholder="Cole o link do Mercado Livre aqui" />
+        <div style="margin-top:8px">
+          <button id="btnAdd" class="btn">Adicionar</button>
+          <button id="btnPreview" class="btn">Preview</button>
+        </div>
+        <p id="status" class="muted"></p>
+      </div>
+
+      <div class="card">
+        <h3>Ferramentas</h3>
+        <button id="btnExport" class="btn">Exportar JSON</button>
+        <input id="importFile" type="file" accept=".json" style="display:inline-block;margin-left:8px" />
+        <button id="btnClear" class="btn" style="background:#c0392b">Limpar tudo</button>
+      </div>
+
+      <div class="card">
+        <h3>Produtos cadastrados</h3>
+        <ul id="adminList" class="admin-list"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">&copy; AchadosJr</div></footer>
+
+  <script src="admin.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
